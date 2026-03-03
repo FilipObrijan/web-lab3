@@ -21,7 +21,7 @@ https://filipobrijan.github.io/web-lab3/
 - Interactive hover tooltip with call-to-action message
 - Mobile-responsive positioning
 ### Mascot
-![mascot](./screenshots/1.png)
+![mascot](./screenshots/mascot.png)
 ### CSS Framework
 - Integrated Bootstrap 5.3.2 for enhanced functionality
 - Utilized Bootstrap grid system (row/col)
