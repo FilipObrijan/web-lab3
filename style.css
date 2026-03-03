@@ -10,6 +10,37 @@
 	--shadow: 0 18px 40px rgba(31, 28, 26, 0.18);
 }
 
+/* Bootstrap Integration & Overrides */
+.form-control {
+	border: 1px solid rgba(31, 28, 26, 0.2);
+	border-radius: 14px;
+	padding: 12px 14px;
+	font-family: "Space Grotesk", "Segoe UI", sans-serif;
+	font-size: 0.95rem;
+	background: var(--white);
+}
+
+.form-control:focus {
+	border-color: var(--tomato);
+	box-shadow: 0 0 0 0.2rem rgba(228, 71, 59, 0.15);
+}
+
+.form-label {
+	display: block;
+	font-weight: 600;
+	font-size: 0.9rem;
+	margin-bottom: 8px;
+}
+
+.badge {
+	padding: 8px 16px;
+	border-radius: 999px;
+	background: var(--mist);
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--ink);
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -169,9 +200,7 @@ h3 {
 }
 
 .hero-metrics {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-	gap: 18px;
+	/* Bootstrap row/col handles layout */
 }
 
 .hero-metrics h3 {
@@ -262,9 +291,7 @@ h3 {
 }
 
 .card-grid {
-	display: grid;
-	gap: 24px;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	/* Bootstrap grid handles layout */
 }
 
 .card {
@@ -272,8 +299,15 @@ h3 {
 	padding: 26px;
 	border-radius: 24px;
 	box-shadow: 0 16px 30px rgba(31, 28, 26, 0.12);
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	gap: 12px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 20px 40px rgba(31, 28, 26, 0.18);
 }
 
 .card a {
@@ -282,9 +316,9 @@ h3 {
 }
 
 .split {
-	display: grid;
+	display: flex;
+	flex-wrap: wrap;
 	gap: 40px;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	align-items: center;
 	background: rgba(255, 255, 255, 0.6);
 	border-radius: 32px;
@@ -325,9 +359,7 @@ h3 {
 }
 
 .contact-grid {
-	display: grid;
-	gap: 32px;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	/* Bootstrap grid handles layout */
 }
 
 .contact-card {
@@ -340,26 +372,16 @@ h3 {
 }
 
 .contact-form {
-	display: grid;
-	gap: 16px;
+	/* Bootstrap handles spacing with mb-3 classes */
 }
 
 .contact-form label {
-	display: grid;
-	gap: 8px;
+	display: block;
 	font-weight: 600;
 	font-size: 0.9rem;
 }
 
-.contact-form input,
-.contact-form textarea {
-	border: 1px solid rgba(31, 28, 26, 0.2);
-	border-radius: 14px;
-	padding: 12px 14px;
-	font-family: inherit;
-	font-size: 0.95rem;
-	background: var(--white);
-}
+/* Bootstrap form-control handles input/textarea styling */
 
 .footer {
 	padding: 32px 6vw 48px;
@@ -573,14 +595,6 @@ h3 {
 	.section {
 		padding: 60px 6vw;
 	}
-
-	.hero-metrics {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.card-grid {
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	}
 }
 
 /* Mobile responsive adjustments */
@@ -604,11 +618,6 @@ h3 {
 	.hero-actions .button {
 		width: 100%;
 		text-align: center;
-	}
-
-	.hero-metrics {
-		grid-template-columns: repeat(3, 1fr);
-		gap: 12px;
 	}
 
 	.hero-metrics h3 {
@@ -671,12 +680,7 @@ h3 {
 		font-size: 1.8rem;
 	}
 
-	.card-grid {
-		grid-template-columns: 1fr;
-	}
-
 	.split {
-		grid-template-columns: 1fr;
 		margin: 0;
 		padding: 32px 24px;
 		border-radius: 24px;
@@ -684,10 +688,6 @@ h3 {
 
 	.benefit-grid {
 		gap: 12px;
-	}
-
-	.contact-grid {
-		grid-template-columns: 1fr;
 	}
 
 	.contact-form label {
