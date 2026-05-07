@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="ro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tomato.md</title>
+    <title>tomato.md - Rosii naturale</title>
     <meta
       name="description"
-      content="Natural tomato and pepper breeding."
+      content="Crestere naturala de rosii si ardei."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Mobile-only Quick CTA -->
-    <a href="#contact" class="mobile-cta-fab" aria-label="Quick order">
+    <a href="#contact" class="mobile-cta-fab" aria-label="Comanda rapida" data-i18n-aria-label="mobileCtaAria">
       <span>🍅</span>
     </a>
 
@@ -33,45 +33,50 @@
           G.T.Boleac Anatolie Filip
         </a>
         <div class="nav-links">
-          <a href="#services">Services</a>
-          <a href="#benefits">Why us</a>
-          <a href="#contact">Contact</a>
+          <a href="#services" data-i18n="navServices">Servicii</a>
+          <a href="#benefits" data-i18n="navWhyUs">De ce noi</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
         </div>
-        <a class="button primary" href="#contact">Make an order</a>
+        <div class="nav-controls">
+          <a class="button primary" href="#contact" data-i18n="navOrder">Fa o comanda</a>
+          <div class="lang-switch" aria-label="Alege limba" data-i18n-aria-label="langSwitchAria">
+            <button class="lang-btn active" type="button" data-lang="ro">RO</button>
+            <button class="lang-btn" type="button" data-lang="ru">RU</button>
+          </div>
+        </div>
       </nav>
 
       <section class="hero-content">
         <div class="hero-copy">
-          <p class="eyebrow">Natural tomato and pepper breeding, big flavor</p>
-          <h1>Buy tomatoes that melt in your mouth.</h1>
-          <p class="lead">
-            We cultivate resilient heritage lines and starter plants adapted for
-            our climate. From seed to harvest, we offer you the best tomato.
+          <p class="eyebrow" data-i18n="heroEyebrow">Crestere naturala de rosii si ardei, gust intens</p>
+          <h1 data-i18n="heroTitle">Cumpara rosii care se topesc in gura.</h1>
+          <p class="lead" data-i18n="heroLead">
+            Cultivam linii traditionale rezistente si rasaduri adaptate climei noastre. De la samanta la recolta, iti oferim cele mai bune rosii.
           </p>
           <div class="hero-actions d-flex gap-3 flex-wrap">
-            <a class="button primary" href="#contact">Make an order</a>
-            <a class="button ghost" href="#services">Explore services</a>
+            <a class="button primary" href="#contact" data-i18n="heroOrder">Fa o comanda</a>
+            <a class="button ghost" href="#services" data-i18n="heroExplore">Vezi serviciile</a>
           </div>
           <div class="hero-metrics row g-3">
             <div class="col-auto">
               <h3 class="mb-1">28+</h3>
-              <p class="mb-0">unique breeding lines</p>
+              <p class="mb-0" data-i18n="metricLines">linii unice de selectie</p>
             </div>
             <div class="col-auto">
               <h3 class="mb-1">50+</h3>
-              <p class="mb-0">local markets served</p>
+              <p class="mb-0" data-i18n="metricMarkets">piete locale deservite</p>
             </div>
             <div class="col-auto">
               <h3 class="mb-1">4.9/5</h3>
-              <p class="mb-0">Clients rating</p>
+              <p class="mb-0" data-i18n="metricRating">rating clienti</p>
             </div>
           </div>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="tomato-card">
-            <span>Make a contract</span>
-            <strong>Large quantity</strong>
-            <p>only for the summer season</p>
+            <span data-i18n="heroCardTop">Fa un contract</span>
+            <strong data-i18n="heroCardTitle">Cantitate mare</strong>
+            <p data-i18n="heroCardText">doar pentru sezonul de vara</p>
           </div>
           <div class="tomato-orb"></div>
           <div class="tomato-orb small"></div>
@@ -83,35 +88,29 @@
     <main>
       <section class="section" id="services">
         <div class="section-header">
-          <p class="eyebrow">Services</p>
-          <h2>Buy our tomatoes.</h2>
+          <p class="eyebrow" data-i18n="servicesEyebrow">Servicii</p>
+          <h2 data-i18n="servicesTitle">Cumpara rosiile noastre.</h2>
         </div>
         <div class="card-grid row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
             <article class="card h-100">
-              <h3>Large quantity</h3>
-              <p>
-                We have the capacity to supply large quantities of tomatoes for legal and natural persons. Our tomatoes are raised indoors and hardened off for the local climate.
-              </p>
-              <a href="#contact" class="mt-auto">Make a contract</a>
+              <h3 data-i18n="service1Title">Cantitate mare</h3>
+              <p data-i18n="service1Text">Avem capacitatea de a livra cantitati mari de rosii pentru persoane fizice si juridice. Rosiile noastre sunt crescute in spatii protejate si adaptate climatului local.</p>
+              <a href="#contact" class="mt-auto" data-i18n="service1Cta">Fa un contract</a>
             </article>
           </div>
           <div class="col">
             <article class="card h-100">
-              <h3>Delivery</h3>
-              <p>
-                Order tomatoes and we deliver directly to your market or home. We offer flexible delivery schedules during the growing season.
-              </p>
-              <a href="#contact" class="mt-auto">Order</a>
+              <h3 data-i18n="service2Title">Livrare</h3>
+              <p data-i18n="service2Text">Comanda rosii si livram direct la piata sau acasa. Oferim program flexibil de livrare pe toata perioada sezonului.</p>
+              <a href="#contact" class="mt-auto" data-i18n="service2Cta">Comanda</a>
             </article>
           </div>
           <div class="col">
             <article class="card h-100">
-              <h3>The best prices</h3>
-              <p>
-                We offer competitive pricing for all our tomato varieties, ensuring you get the best value for your investment.
-              </p>
-              <a href="#contact" class="mt-auto">Lets haggle</a>
+              <h3 data-i18n="service3Title">Cele mai bune preturi</h3>
+              <p data-i18n="service3Text">Oferim preturi competitive pentru toate soiurile noastre de rosii, astfel incat sa obtii cel mai bun raport calitate-pret.</p>
+              <a href="#contact" class="mt-auto" data-i18n="service3Cta">Negociem</a>
             </article>
           </div>
         </div>
@@ -119,33 +118,30 @@
 
       <section class="section split" id="benefits">
         <div class="col-lg-5">
-          <p class="eyebrow">Why us?</p>
-          <h2>Built for flavor, tested for resilience.</h2>
-          <p class="lead">
-            Our breeding program prioritizes taste, disease resistance, and
-            consistent harvests.
-          </p>
+          <p class="eyebrow" data-i18n="benefitsEyebrow">De ce noi?</p>
+          <h2 data-i18n="benefitsTitle">Crescut pentru gust, testat pentru rezistenta.</h2>
+          <p class="lead" data-i18n="benefitsLead">Programul nostru de selectie pune accent pe gust, rezistenta la boli si recolte constante.</p>
           <div class="pill-list d-flex flex-wrap gap-2">
-            <span class="badge">Cash</span>
-            <span class="badge">Bill</span>
+            <span class="badge" data-i18n="badgeCash">Cash</span>
+            <span class="badge" data-i18n="badgeBill">Factura</span>
           </div>
         </div>
         <div class="benefit-grid col-lg-7">
           <div class="benefit mb-3">
-            <h3>Bred for Taste</h3>
-            <p class="mb-0">Hand-picked flavor profiles with professional tasting notes.</p>
+            <h3 data-i18n="benefit1Title">Selectate pentru gust</h3>
+            <p class="mb-0" data-i18n="benefit1Text">Profile aromatice alese atent, cu evaluari de degustare profesionale.</p>
           </div>
           <div class="benefit mb-3">
-            <h3>Built for Resilience</h3>
-            <p class="mb-0">Adapted genetics for short seasons and cool climates.</p>
+            <h3 data-i18n="benefit2Title">Construite pentru rezistenta</h3>
+            <p class="mb-0" data-i18n="benefit2Text">Genetica adaptata pentru sezoane scurte si climat mai racoros.</p>
           </div>
           <div class="benefit mb-3">
-            <h3>Estate-Quality Genetics:</h3>
-            <p class="mb-0">Open-pollinated lines refined over seasons to ensure every bite is as good as the last.</p>
+            <h3 data-i18n="benefit3Title">Genetica premium de ferma:</h3>
+            <p class="mb-0" data-i18n="benefit3Text">Linii cu polenizare libera, rafinate sezon dupa sezon, pentru acelasi gust excelent la fiecare recolta.</p>
           </div>
           <div class="benefit mb-0">
-            <h3>Great Price/Quality ratio</h3>
-            <p class="mb-0">Get the elite flavor and hardy resilience of a boutique breeding program at a price that makes a gourmet harvest accessible to every backyard.</p>
+            <h3 data-i18n="benefit4Title">Raport excelent pret/calitate</h3>
+            <p class="mb-0" data-i18n="benefit4Text">Primesti gust de top si rezistenta ridicata la un pret accesibil pentru orice gradina.</p>
           </div>
         </div>
       </section>
@@ -153,94 +149,442 @@
       <!-- Mobile-only promotional banner -->
       <section class="mobile-only-promo">
         <div class="promo-content">
-          <h3>First-Time Customer Special</h3>
-          <p>Get 15% off your first order! Fresh tomatoes delivered to your doorstep.</p>
-          <a href="#contact" class="button primary">Claim your discount</a>
+          <h3 data-i18n="promoTitle">Oferta speciala pentru prima comanda</h3>
+          <p data-i18n="promoText">Primesti 15% reducere la prima comanda! Rosii proaspete livrate la usa ta.</p>
+          <a href="#contact" class="button primary" data-i18n="promoCta">Revendica reducerea</a>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section section" id="gallery">
+        <div class="gallery-header section-header">
+          <p class="eyebrow">Galerie</p>
+          <h2>Rosiile noastre</h2>
+        </div>
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite">
+          <figure class="gallery-slide is-active" data-index="0">
+            <img loading="lazy" src="assets/gallery/edited/thumbs/1000000725.webp" data-full="assets/gallery/edited/1000000725.jpg" alt="Cutii cu cherry galbene și roșii" data-filename="1000000725.jpg">
+            <figcaption data-caption-ro="Roșii Cherry" data-caption-ru="Ящики с желтыми и красными черри">Cutii cu cherry galbene și roșii</figcaption>
+          </figure>
+        
+          <figure class="gallery-slide" data-index="1">
+            <img loading="lazy" src="assets/gallery/edited/thumbs/1000002563.webp" data-full="assets/gallery/edited/1000002563.jpg" alt="Cutie cu cherry maronii" data-filename="1000002563.jpg">
+            <figcaption data-caption-ro="Roșii Cherry" data-caption-ru="Ящик с коричневыми черри">Cutie cu cherry maronii</figcaption>
+          </figure>
+          
+          <figure class="gallery-slide" data-index="2">
+            <img loading="lazy" src="assets/gallery/edited/thumbs/1000005404.webp" data-full="assets/gallery/edited/1000005404.jpg" alt="Mix cherry și roșii heirloom" data-filename="1000005404.jpg">
+            <figcaption data-caption-ro="Roșii Roze" data-caption-ru="Смесь черри и сортовых помидоров">Mix cherry și roșii heirloom</figcaption>
+          </figure>
+          <figure class="gallery-slide" data-index="3">
+            <img loading="lazy" src="assets/gallery/edited/thumbs/1000009113.webp" data-full="assets/gallery/edited/1000009113.jpg" alt="Roșii coapte în cutii" data-filename="1000009113.jpg">
+            <figcaption data-caption-ro="Roșii Roze" data-caption-ru="Спелые помидоры в ящиках">Roșii coapte în cutii</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-controls">
+          <button class="gallery-nav" id="galleryPrev" type="button" aria-label="Slide anterior">‹</button>
+          <div class="gallery-dots" id="galleryDots" role="tablist" aria-label="Navigare galeriei"></div>
+          <button class="gallery-nav" id="galleryNext" type="button" aria-label="Slide urmator">›</button>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox hidden" aria-hidden="true" style="background: transparent !important;">
+          <div class="lightbox-content" style="background: transparent;">
+            <img id="lightboxImg" src="" alt="" style="box-shadow: 0 30px 60px rgba(0,0,0,0.55); background: transparent;" />
+            <div class="lightbox-side">
+              <div class="lightbox-caption" id="lightboxCaption"></div>
+              <div class="lightbox-controls">
+                <button class="lightbox-button" id="prevBtn">Prev</button>
+                <button class="lightbox-button" id="nextBtn">Next</button>
+                <button class="lightbox-button" id="closeBtn">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section contact" id="contact">
         <div class="section-header">
-          <p class="eyebrow">Contact</p>
-          <h2>Make the world tastier with us.</h2>
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Fa lumea mai gustoasa cu noi.</h2>
         </div>
         <div class="contact-grid row g-4">
-          <div class="col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-7 order-lg-1">
+            <form class="contact-form">
+              <div class="mb-3">
+                <label class="form-label">
+                  <span data-i18n="formNameLabel">Nume complet</span>
+                  <input type="text" name="name" class="form-control" placeholder="Numele tau" data-i18n-placeholder="formNamePlaceholder" />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">
+                  <span data-i18n="formPhoneLabel">Telefon</span>
+                  <input type="tel" name="phone" class="form-control" placeholder="+373 xxxxxxxx" data-i18n-placeholder="formPhonePlaceholder" />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">
+                  <span data-i18n="formMessageLabel">Ce vrei sa cumperi si in ce cantitate?</span>
+                  <textarea name="message" rows="4" class="form-control" placeholder="Spune-ne despre necesarul tau." data-i18n-placeholder="formMessagePlaceholder"></textarea>
+                </label>
+              </div>
+              <button class="button primary" type="submit" data-i18n="formSubmit">Trimite cererea</button>
+            </form>
+          </div>
+          <div class="col-md-6 col-lg-5 order-lg-2">
             <div class="contact-card">
-              <h3>Make an order</h3>
-              <p class="mb-2">Open Mon-Sat, 09:00-20:00</p>
+              <h3 data-i18n="contactCardTitle">Fa o comanda</h3>
+              <p class="mb-2" data-i18n="contactHours">Lun-Sam, 09:00-20:00</p>
               <p class="mb-2">Dumbravita, Singerei</p>
               <p class="mb-2">+373 78084909</p>
               <p class="mb-0">obrijanfilip2004@gmail.com</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-7">
-            <form class="contact-form">
-              <div class="mb-3">
-                <label class="form-label">
-                  Full name
-                  <input type="text" name="name" class="form-control" placeholder="Your name" />
-                </label>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">
-                  Email
-                  <input type="email" name="email" class="form-control" placeholder="you@email.com" />
-                </label>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">
-                  What do you want to buy, and what quantity?
-                  <textarea name="message" rows="4" class="form-control" placeholder="Tell us about your plot."></textarea>
-                </label>
-              </div>
-              <button class="button primary" type="submit">Send request</button>
-            </form>
-          </div>
         </div>
       </section>
     </main>
+    
 
     <footer class="footer">
-      <p>G.T.Boleac Anatolie Filip. Breeding bold tomatoes since 2004.</p>
-      <a href="#top">Back to top</a>
+      <p data-i18n="footerText">G.T.Boleac Anatolie Filip. Crestem rosii deosebite din 2004.</p>
+      <a href="#top" data-i18n="footerTop">Inapoi sus</a>
     </footer>
 
     <!-- Animated Mascot -->
     <div class="mascot" id="tomato-mascot">
       <div class="mascot-character">
-        <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-          <!-- Tomato body -->
-          <ellipse cx="50" cy="70" rx="35" ry="38" fill="#e4473b"/>
-          <ellipse cx="40" cy="60" rx="8" ry="10" fill="#f57d6e" opacity="0.6"/>
-          
-          <!-- Stem and leaves -->
-          <rect x="47" y="30" width="6" height="15" fill="#2e7b52" rx="2"/>
-          <ellipse cx="35" cy="35" rx="12" ry="6" fill="#2e7b52" transform="rotate(-25 35 35)"/>
-          <ellipse cx="65" cy="35" rx="12" ry="6" fill="#2e7b52" transform="rotate(25 65 35)"/>
-          <ellipse cx="50" cy="28" rx="10" ry="5" fill="#2e7b52"/>
-          
-          <!-- Eyes -->
-          <circle cx="40" cy="68" r="4" fill="#1f1c1a"/>
-          <circle cx="60" cy="68" r="4" fill="#1f1c1a"/>
-          <circle cx="41" cy="67" r="1.5" fill="white"/>
-          <circle cx="61" cy="67" r="1.5" fill="white"/>
-          
-          <!-- Smile -->
-          <path d="M 38 78 Q 50 85 62 78" stroke="#1f1c1a" stroke-width="2" fill="none" stroke-linecap="round"/>
-          
-          <!-- Rosy cheeks -->
-          <ellipse cx="32" cy="75" rx="4" ry="3" fill="#f1644b" opacity="0.5"/>
-          <ellipse cx="68" cy="75" rx="4" ry="3" fill="#f1644b" opacity="0.5"/>
-        </svg>
+        <img src="assets/mascot/boleac.png" alt="Mascota Boleac" loading="lazy" />
       </div>
       <div class="mascot-tooltip">
-        <p>Welcome! Want the tastiest tomatoes?</p>
-        <a href="#contact">Order Now →</a>
+        <p data-i18n="mascotText">Bine ai venit! Vrei cele mai gustoase rosii?</p>
+        <a href="#contact" data-i18n="mascotCta">Comanda acum -></a>
       </div>
     </div>
 
     <script>
+      const translations = {
+        ro: {
+          siteTitle: 'tomato.md - Rosii naturale',
+          metaDescription: 'Crestere naturala de rosii si ardei.',
+          mobileCtaAria: 'Comanda rapida',
+          langSwitchAria: 'Alege limba',
+          navServices: 'Servicii',
+          navWhyUs: 'De ce noi',
+          navContact: 'Contact',
+          navOrder: 'Fa o comanda',
+          heroEyebrow: 'Crestere naturala de rosii si ardei, gust intens',
+          heroTitle: 'Cumpara rosii care se topesc in gura.',
+          heroLead: 'Cultivam linii traditionale rezistente si rasaduri adaptate climei noastre. De la samanta la recolta, iti oferim cele mai bune rosii.',
+          heroOrder: 'Fa o comanda',
+          heroExplore: 'Vezi serviciile',
+          metricLines: 'linii unice de selectie',
+          metricMarkets: 'piete locale deservite',
+          metricRating: 'rating clienti',
+          heroCardTop: 'Fa un contract',
+          heroCardTitle: 'Cantitate mare',
+          heroCardText: 'doar pentru sezonul de vara',
+          servicesEyebrow: 'Servicii',
+          servicesTitle: 'Cumpara rosiile noastre.',
+          service1Title: 'Cantitate mare',
+          service1Text: 'Avem capacitatea de a livra cantitati mari de rosii pentru persoane fizice si juridice. Rosiile noastre sunt crescute in spatii protejate si adaptate climatului local.',
+          service1Cta: 'Fa un contract',
+          service2Title: 'Livrare',
+          service2Text: 'Comanda rosii si livram direct la piata sau acasa. Oferim program flexibil de livrare pe toata perioada sezonului.',
+          service2Cta: 'Comanda',
+          service3Title: 'Cele mai bune preturi',
+          service3Text: 'Oferim preturi competitive pentru toate soiurile noastre de rosii, astfel incat sa obtii cel mai bun raport calitate-pret.',
+          service3Cta: 'Negociem',
+          benefitsEyebrow: 'De ce noi?',
+          benefitsTitle: 'Crescut pentru gust, testat pentru rezistenta.',
+          benefitsLead: 'Programul nostru de selectie pune accent pe gust, rezistenta la boli si recolte constante.',
+          badgeCash: 'Cash',
+          badgeBill: 'Factura',
+          benefit1Title: 'Selectate pentru gust',
+          benefit1Text: 'Profile aromatice alese atent, cu evaluari de degustare profesionale.',
+          benefit2Title: 'Construite pentru rezistenta',
+          benefit2Text: 'Genetica adaptata pentru sezoane scurte si climat mai racoros.',
+          benefit3Title: 'Genetica premium de ferma:',
+          benefit3Text: 'Linii cu polenizare libera, rafinate sezon dupa sezon, pentru acelasi gust excelent la fiecare recolta.',
+          benefit4Title: 'Raport excelent pret/calitate',
+          benefit4Text: 'Primesti gust de top si rezistenta ridicata la un pret accesibil pentru orice gradina.',
+          promoTitle: 'Oferta speciala pentru prima comanda',
+          promoText: 'Primesti 15% reducere la prima comanda! Rosii proaspete livrate la usa ta.',
+          promoCta: 'Revendica reducerea',
+          contactEyebrow: 'Contact',
+          contactTitle: 'Fa lumea mai gustoasa cu noi.',
+          contactCardTitle: 'Fa o comanda',
+          contactHours: 'Lun-Sam, 09:00-20:00',
+          formNameLabel: 'Nume complet',
+          formNamePlaceholder: 'Numele tau',
+          formPhoneLabel: 'Telefon',
+          formPhonePlaceholder: '+373 xxxxxxxx',
+          formMessageLabel: 'Ce vrei sa cumperi si in ce cantitate?',
+          formMessagePlaceholder: 'Spune-ne despre necesarul tau.',
+          formSubmit: 'Trimite cererea',
+          footerText: 'G.T.Boleac Anatolie Filip. Crestem rosii deosebite din 2004.',
+          footerTop: 'Inapoi sus',
+          mascotText: 'Bine ai venit! Vrei cele mai gustoase rosii?',
+          mascotCta: 'Comanda acum ->'
+        },
+        ru: {
+          siteTitle: 'tomato.md - Натуральные томаты',
+          metaDescription: 'Натуральное выращивание томатов и перца.',
+          mobileCtaAria: 'Быстрый заказ',
+          langSwitchAria: 'Выберите язык',
+          navServices: 'Услуги',
+          navWhyUs: 'Почему мы',
+          navContact: 'Контакты',
+          navOrder: 'Сделать заказ',
+          heroEyebrow: 'Натуральное выращивание томатов и перца, насыщенный вкус',
+          heroTitle: 'Покупайте томаты, которые тают во рту.',
+          heroLead: 'Мы выращиваем устойчивые традиционные линии и рассаду, адаптированную к нашему климату. От семени до урожая предлагаем лучшие томаты.',
+          heroOrder: 'Сделать заказ',
+          heroExplore: 'Смотреть услуги',
+          metricLines: 'уникальных селекционных линий',
+          metricMarkets: 'местных рынков обслужено',
+          metricRating: 'рейтинг клиентов',
+          heroCardTop: 'Заключить договор',
+          heroCardTitle: 'Большой объем',
+          heroCardText: 'только на летний сезон',
+          servicesEyebrow: 'Услуги',
+          servicesTitle: 'Покупайте наши томаты.',
+          service1Title: 'Большой объем',
+          service1Text: 'У нас есть возможность поставлять большие объемы томатов для физических и юридических лиц. Наши томаты выращиваются в защищенных условиях и адаптированы к местному климату.',
+          service1Cta: 'Заключить договор',
+          service2Title: 'Доставка',
+          service2Text: 'Закажите томаты, и мы доставим прямо на рынок или домой. В сезон доступен гибкий график доставки.',
+          service2Cta: 'Заказать',
+          service3Title: 'Лучшие цены',
+          service3Text: 'Мы предлагаем конкурентные цены на все сорта томатов, чтобы вы получили лучший баланс цены и качества.',
+          service3Cta: 'Обсудим цену',
+          benefitsEyebrow: 'Почему мы?',
+          benefitsTitle: 'Создано для вкуса, проверено на устойчивость.',
+          benefitsLead: 'Наша селекционная программа ставит в приоритет вкус, устойчивость к болезням и стабильный урожай.',
+          badgeCash: 'Наличные',
+          badgeBill: 'Счет',
+          benefit1Title: 'Отобрано за вкус',
+          benefit1Text: 'Тщательно подобранные вкусовые профили с профессиональными дегустационными оценками.',
+          benefit2Title: 'Создано для устойчивости',
+          benefit2Text: 'Адаптированная генетика для короткого сезона и прохладного климата.',
+          benefit3Title: 'Премиальная фермерская генетика:',
+          benefit3Text: 'Линии открытого опыления, улучшенные за сезоны, чтобы каждый урожай был стабильно вкусным.',
+          benefit4Title: 'Отличное соотношение цена/качество',
+          benefit4Text: 'Элитный вкус и высокая устойчивость по цене, доступной для каждого огорода.',
+          promoTitle: 'Спецпредложение для первого заказа',
+          promoText: 'Получите 15% скидку на первый заказ! Свежие томаты с доставкой к вашему дому.',
+          promoCta: 'Получить скидку',
+          contactEyebrow: 'Контакты',
+          contactTitle: 'Сделаем мир вкуснее вместе.',
+          contactCardTitle: 'Сделать заказ',
+          contactHours: 'Открыто Пн-Сб, 09:00-20:00',
+          formNameLabel: 'Полное имя',
+          formNamePlaceholder: 'Ваше имя',
+          formPhoneLabel: 'Телефон',
+          formPhonePlaceholder: '+373 xxxxxxxx',
+          formMessageLabel: 'Что вы хотите купить и в каком количестве?',
+          formMessagePlaceholder: 'Расскажите о вашем заказе.',
+          formSubmit: 'Отправить заявку',
+          footerText: 'G.T.Boleac Anatolie Filip. Выращиваем яркие томаты с 2004 года.',
+          footerTop: 'Наверх',
+          mascotText: 'Добро пожаловать! Хотите самые вкусные томаты?',
+          mascotCta: 'Заказать сейчас ->'
+        }
+      };
+
+      const applyLanguage = (lang) => {
+        const currentLang = translations[lang] ? lang : 'ro';
+        const dictionary = translations[currentLang];
+
+        document.documentElement.lang = currentLang;
+        document.title = dictionary.siteTitle;
+
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+          metaDescription.setAttribute('content', dictionary.metaDescription);
+        }
+
+        document.querySelectorAll('[data-i18n]').forEach((element) => {
+          const key = element.dataset.i18n;
+          if (dictionary[key]) {
+            element.textContent = dictionary[key];
+          }
+        });
+
+        document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+          const key = element.dataset.i18nPlaceholder;
+          if (dictionary[key]) {
+            element.setAttribute('placeholder', dictionary[key]);
+          }
+        });
+
+        document.querySelectorAll('[data-i18n-aria-label]').forEach((element) => {
+          const key = element.dataset.i18nAriaLabel;
+          if (dictionary[key]) {
+            element.setAttribute('aria-label', dictionary[key]);
+          }
+        });
+
+        // Update gallery thumbnails captions if present
+        document.querySelectorAll('.gallery-grid figure').forEach((figure) => {
+          const cap = figure.querySelector('figcaption');
+          if (!cap) return;
+          const langKey = currentLang === 'ru' ? 'Ru' : 'Ro';
+          const newText = cap.dataset['caption' + langKey];
+          if (newText) cap.textContent = newText;
+        });
+
+        document.querySelectorAll('.lang-btn').forEach((button) => {
+          button.classList.toggle('active', button.dataset.lang === currentLang);
+        });
+
+        localStorage.setItem('site-language', currentLang);
+      };
+
+      document.querySelectorAll('.lang-btn').forEach((button) => {
+        button.addEventListener('click', () => {
+          applyLanguage(button.dataset.lang);
+        });
+      });
+
+      applyLanguage(localStorage.getItem('site-language') || 'ro');
+
+      // --- Gallery / Lightbox setup ---
+      (function(){
+        const galleryGrid = document.getElementById('galleryGrid');
+        if (!galleryGrid) return;
+        const items = Array.from(galleryGrid.querySelectorAll('.gallery-slide'));
+        const prevSlideButton = document.getElementById('galleryPrev');
+        const nextSlideButton = document.getElementById('galleryNext');
+        const dotsWrap = document.getElementById('galleryDots');
+        let currentIndex = 0;
+        let autoTimer = null;
+        const autoDelay = 3600;
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+
+        const dots = items.map((_, index) => {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', `Slide ${index + 1}`);
+          dot.addEventListener('click', () => {
+            setSlide(index);
+            restartAuto();
+          });
+          dotsWrap.appendChild(dot);
+          return dot;
+        });
+
+        const setSlide = (targetIndex) => {
+          currentIndex = (targetIndex + items.length) % items.length;
+          items.forEach((item, index) => {
+            item.classList.remove('is-active', 'is-prev', 'is-next', 'is-hidden');
+            let delta = index - currentIndex;
+            if (delta > items.length / 2) delta -= items.length;
+            if (delta < -items.length / 2) delta += items.length;
+
+            if (delta === 0) {
+              item.classList.add('is-active');
+            } else if (delta === -1) {
+              item.classList.add('is-prev');
+            } else if (delta === 1) {
+              item.classList.add('is-next');
+            } else {
+              item.classList.add('is-hidden');
+            }
+          });
+          dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+          });
+        };
+
+        const restartAuto = () => {
+          if (autoTimer) clearInterval(autoTimer);
+          autoTimer = setInterval(() => {
+            setSlide(currentIndex + 1);
+          }, autoDelay);
+        };
+
+        const updateCaptionFor = (figure) => {
+          const lang = document.documentElement.lang || 'ro';
+          const cap = figure.querySelector('figcaption');
+          const text = cap ? cap.dataset['caption' + (lang === 'ru' ? 'Ru' : 'Ro')] : '';
+          lightboxCaption.textContent = text || '';
+        };
+
+        items.forEach((figure, idx) => {
+          const img = figure.querySelector('img');
+          img.addEventListener('click', () => {
+            if (idx !== currentIndex) {
+              setSlide(idx);
+              restartAuto();
+              return;
+            }
+            currentIndex = idx;
+            setSlide(currentIndex);
+            lightboxImg.src = img.dataset.full || img.src;
+            updateCaptionFor(figure);
+            lightbox.classList.remove('hidden');
+            lightbox.setAttribute('aria-hidden','false');
+            // hide the gallery behind the lightbox so underlying slides don't show as dark panels
+            if (galleryGrid && galleryGrid.style) galleryGrid.style.visibility = 'hidden';
+          });
+        });
+
+        prevSlideButton.addEventListener('click', () => {
+          setSlide(currentIndex - 1);
+          restartAuto();
+        });
+
+        nextSlideButton.addEventListener('click', () => {
+          setSlide(currentIndex + 1);
+          restartAuto();
+        });
+
+        galleryGrid.addEventListener('mouseenter', () => {
+          if (autoTimer) clearInterval(autoTimer);
+        });
+
+        galleryGrid.addEventListener('mouseleave', () => {
+          restartAuto();
+        });
+
+        document.getElementById('closeBtn').addEventListener('click', () => {
+          lightbox.classList.add('hidden');
+          lightbox.setAttribute('aria-hidden','true');
+          if (galleryGrid && galleryGrid.style) galleryGrid.style.visibility = 'visible';
+        });
+        document.getElementById('prevBtn').addEventListener('click', () => {
+          setSlide(currentIndex - 1);
+          const figure = items[currentIndex];
+          lightboxImg.src = figure.querySelector('img').dataset.full || figure.querySelector('img').src;
+          updateCaptionFor(figure);
+        });
+        document.getElementById('nextBtn').addEventListener('click', () => {
+          setSlide(currentIndex + 1);
+          const figure = items[currentIndex];
+          lightboxImg.src = figure.querySelector('img').dataset.full || figure.querySelector('img').src;
+          updateCaptionFor(figure);
+        });
+
+        // update caption when language changes
+        const origApply = applyLanguage;
+        window.applyLanguage = (lang) => {
+          origApply(lang);
+          // refresh caption if lightbox open
+          if (!lightbox.classList.contains('hidden')) {
+            const figure = items[currentIndex];
+            if (figure) updateCaptionFor(figure);
+          }
+        };
+
+        setSlide(0);
+        restartAuto();
+      })();
+
       // Mascot appears after 2 second delay
       setTimeout(() => {
         document.getElementById('tomato-mascot').classList.add('visible');
